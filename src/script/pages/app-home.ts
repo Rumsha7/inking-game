@@ -79,7 +79,7 @@ export class AppHome extends LitElement {
           <img src="assets/icons/icon_512.png" alt="app icon">
           <h2>${this.message}</h2>
 
-          <button> Sign in </button>
+          <a href="./launch">Sign in</a>
 
           ${'share' in navigator ? html`<button @click="${this.share}">Share this Starter!</button>` : null}
         </div>
