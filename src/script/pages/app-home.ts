@@ -81,7 +81,7 @@ export class AppHome extends LitElement {
 
           <a href="./launch">Sign in</a>
 
-          ${'share' in navigator ? html`<button @click="${this.share}">Share this Starter!</button>` : null}
+          ${'share' in navigator ? html`<button @click="${this.share}">Share this Game!</button>` : null}
         </div>
 
         <pwa-install>Install PWA Starter</pwa-install>
