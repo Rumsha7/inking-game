@@ -76,10 +76,10 @@ export class AppIndex extends LitElement {
             },
           },
           {
-            path: "/launchHost",
-            component: "app-launchHost",
+            path: "/launchhost",
+            component: "app-launchhost",
             action: async () => {
-              await import('./app-launchHost.js');
+              await import('./app-launchhost.js');
             },
           }
         ]
