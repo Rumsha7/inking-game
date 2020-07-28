@@ -6,6 +6,14 @@ export class AppLaunch extends LitElement {
 
   static get styles() {
     return css`
+    #main {
+        text-align: center;
+    }
+
+    #launchOption {
+        padding: 10px;
+        background-color: green;
+    }
     `;
   }
 
@@ -15,8 +23,12 @@ export class AppLaunch extends LitElement {
 
   render() {
     return html`
-      <div>
-        <h2>Launch Page</h2>
+      <div id="main">
+      <h2>Welcome <i>user name</i></h2>
+      <span>
+        <a id="launchOption">Host a game</a>
+        <a id="launchOption">Join a game</a>
+      </span>
       </div>
     `;
   }
