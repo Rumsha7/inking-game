@@ -68,10 +68,10 @@ export class AppIndex extends LitElement {
         children: [
           { path: '/', component: 'app-home' },
           {
-            path: "/about",
-            component: "app-about",
+            path: "/launch",
+            component: "app-launch",
             action: async () => {
-              await import('./app-about.js');
+              await import('./app-launch.js');
             },
           }
         ]

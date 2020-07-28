@@ -63,8 +63,8 @@ export class AppHome extends LitElement {
   share() {
     if ((navigator as any).share) {
       (navigator as any).share({
-        title: 'PWABuilder pwa-starter',
-        text: 'Check out the PWABuilder pwa-starter!',
+        title: 'Scuttlebutt',
+        text: 'Check out the new Scuttlebutt game! Perfect for a team social!',
         url: 'https://github.com/pwa-builder/pwa-starter',
       })
     }
@@ -79,13 +79,9 @@ export class AppHome extends LitElement {
           <img src="assets/icons/icon_512.png" alt="app icon">
           <h2>${this.message}</h2>
 
-          <p>
-            Welcome to the <a href="https://pwabuilder.com">PWABuilder</a> pwa-starter!
+          <a href="./launch">Sign in</a>
 
-            Be sure to head back to <a href="https://pwabuilder.com">PWABuilder</a> when you are ready to ship this PWA to the Microsoft, Google Play and Samsung Galaxy stores!
-          </p>
-
-          ${'share' in navigator ? html`<button @click="${this.share}">Share this Starter!</button>` : null}
+          ${'share' in navigator ? html`<button @click="${this.share}">Share this Game!</button>` : null}
         </div>
 
         <pwa-install>Install PWA Starter</pwa-install>
