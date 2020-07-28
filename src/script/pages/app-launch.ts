@@ -10,10 +10,25 @@ export class AppLaunch extends LitElement {
         text-align: center;
     }
 
+    .profilePic {
+        height: 25px;
+        width: 25px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .profileName {
+        display: inline-block;
+    }
+
+
     #launchOption {
         padding: 10px;
         background-color: green;
     }
+
+    
     `;
   }
 
@@ -24,8 +39,13 @@ export class AppLaunch extends LitElement {
   render() {
     return html`
       <div id="main">
-      <h2>Welcome <i>user name</i></h2>
-      <span>
+      <h3>Welcome</h3>
+      <span class="profilePic"></span>
+      <span class="profileName"><i>user name</i></span>
+    
+      <p></p>
+
+      <span class="options">
         <a id="launchOption">Host a game</a>
         <a id="launchOption">Join a game</a>
       </span>
