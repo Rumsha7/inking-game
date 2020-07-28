@@ -36,7 +36,7 @@ export class AppLaunchHost extends LitElement {
       <app-userdisplay></app-userdisplay>
       <app-userdisplay></app-userdisplay>
 
-      <button> Begin Game </button>
+      <a href="./play">Begin Game</a>
       </div>
     `;
   }
