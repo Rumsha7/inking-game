@@ -30,8 +30,8 @@ export class AppLaunch extends LitElement {
       <app-userdisplay></app-userdisplay>
 
       <span class="options">
-        <a id="launchOption" href="./launchHost">Host a game</a>
-        <a id="launchOption">Join a game</a>
+        <a id="launchOption" href="./launchhost">Host a game</a>
+        <a id="launchOption" href="./launchjoin">Join a game</a>
       </span>
       </div>
     `;

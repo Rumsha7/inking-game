@@ -81,6 +81,13 @@ export class AppIndex extends LitElement {
             action: async () => {
               await import('./app-launchhost.js');
             },
+          },
+          {
+            path: "/launchjoin",
+            component: "app-launchjoin",
+            action: async () => {
+              await import('./app-launchjoin.js');
+            },
           }
         ]
       } as any)
