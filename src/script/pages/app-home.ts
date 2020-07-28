@@ -63,8 +63,8 @@ export class AppHome extends LitElement {
   share() {
     if ((navigator as any).share) {
       (navigator as any).share({
-        title: 'PWABuilder pwa-starter',
-        text: 'Check out the PWABuilder pwa-starter!',
+        title: 'Scuttlebutt',
+        text: 'Check out the new Scuttlebutt game! Perfect for a team social!',
         url: 'https://github.com/pwa-builder/pwa-starter',
       })
     }
