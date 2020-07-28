@@ -1,16 +1,16 @@
 import { LitElement, css, html, customElement } from 'lit-element';
 
 
-@customElement('app-launch')
-export class AppLaunch extends LitElement {
+@customElement('app-launchHost')
+export class AppLaunchHost extends LitElement {
 
   static get styles() {
     return css`
     #main {
         text-align: center;
     }
-
-    #launchOption {
+    
+    #launchHostOption {
         padding: 10px;
         background-color: green;
     }
@@ -26,13 +26,7 @@ export class AppLaunch extends LitElement {
   render() {
     return html`
       <div id="main">
-      <h3>Welcome</h3>
-      <app-userdisplay></app-userdisplay>
-
-      <span class="options">
-        <a id="launchOption">Host a game</a>
-        <a id="launchOption">Join a game</a>
-      </span>
+      Launch host
       </div>
     `;
   }

@@ -5,6 +5,7 @@ import './app-home';
 import { Router } from '@vaadin/router';
 
 import '../components/header';
+import '../components/userdisplay';
 
 
 @customElement('app-index')
@@ -72,6 +73,13 @@ export class AppIndex extends LitElement {
             component: "app-launch",
             action: async () => {
               await import('./app-launch.js');
+            },
+          },
+          {
+            path: "/launchHost",
+            component: "app-launchHost",
+            action: async () => {
+              await import('./app-launchHost.js');
             },
           }
         ]
